@@ -11,13 +11,7 @@ import Alamofire
 
 // MARK: - Global
 
-internal struct Notifications {
-    static let itemsDidLoadNotification = "itemsDidLoadNotification"
-}
-
-let userDefaults       = NSUserDefaults.standardUserDefaults()
-let notificationCenter = NSNotificationCenter.defaultCenter()
-let mainQueue          = NSOperationQueue.mainQueue()
+let mainQueue = NSOperationQueue.mainQueue()
 
 // MARK: - Alamofire
 

@@ -9,5 +9,6 @@
 #ifndef SelfSizingCollectionViewCell_SelfSizing_Bridging_Header_h
 #define SelfSizingCollectionViewCell_SelfSizing_Bridging_Header_h
 
+#import "AFNetworking/AFNetworking.h"
 
 #endif

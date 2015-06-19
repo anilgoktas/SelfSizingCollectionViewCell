@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		205F52B41B33E160007699AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205F52B31B33E160007699AA /* AppDelegate.swift */; };
-		205F52B61B33E160007699AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205F52B51B33E160007699AA /* ViewController.swift */; };
 		205F52B91B33E161007699AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205F52B71B33E161007699AA /* Main.storyboard */; };
 		205F52BB1B33E161007699AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205F52BA1B33E161007699AA /* Images.xcassets */; };
 		205F52BE1B33E161007699AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205F52BC1B33E161007699AA /* LaunchScreen.xib */; };
 		205F52CA1B33E161007699AA /* SelfSizingCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205F52C91B33E161007699AA /* SelfSizingCollectionViewCellTests.swift */; };
+		205F52D41B33E2EC007699AA /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205F52D31B33E2EC007699AA /* CollectionViewController.swift */; };
+		205F52D61B33E38A007699AA /* SelfSizingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205F52D51B33E38A007699AA /* SelfSizingCollectionViewCell.xib */; };
+		205F52D81B33E3C0007699AA /* SelfSizingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205F52D71B33E3C0007699AA /* SelfSizingCollectionViewCell.swift */; };
+		205F52DC1B33E3F9007699AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205F52DB1B33E3F9007699AA /* Item.swift */; };
+		205F52DE1B33E558007699AA /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205F52DD1B33E558007699AA /* CHTCollectionViewWaterfallLayout.swift */; };
+		20DA7BB71B33E9F700EF82E9 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA7BB61B33E9F700EF82E9 /* ViewExtension.swift */; };
+		20DA7BB91B33EA0200EF82E9 /* ModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA7BB81B33EA0200EF82E9 /* ModelExtension.swift */; };
+		CFCD01F2F41FDB58C401E60C /* Pods_SelfSizingCollectionViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D006CBFECA8693DFA1C3B2 /* Pods_SelfSizingCollectionViewCell.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +36,23 @@
 		205F52AE1B33E160007699AA /* SelfSizingCollectionViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfSizingCollectionViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		205F52B21B33E160007699AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		205F52B31B33E160007699AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		205F52B51B33E160007699AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		205F52B81B33E161007699AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		205F52BA1B33E161007699AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		205F52BD1B33E161007699AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		205F52C31B33E161007699AA /* SelfSizingCollectionViewCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfSizingCollectionViewCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		205F52C81B33E161007699AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		205F52C91B33E161007699AA /* SelfSizingCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingCollectionViewCellTests.swift; sourceTree = "<group>"; };
+		205F52D31B33E2EC007699AA /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		205F52D51B33E38A007699AA /* SelfSizingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelfSizingCollectionViewCell.xib; sourceTree = "<group>"; };
+		205F52D71B33E3C0007699AA /* SelfSizingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizingCollectionViewCell.swift; sourceTree = "<group>"; };
+		205F52DB1B33E3F9007699AA /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		205F52DD1B33E558007699AA /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
+		20DA7BB41B33E73B00EF82E9 /* SelfSizing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SelfSizing-Bridging-Header.h"; sourceTree = "<group>"; };
+		20DA7BB61B33E9F700EF82E9 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		20DA7BB81B33EA0200EF82E9 /* ModelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelExtension.swift; sourceTree = "<group>"; };
+		417A04CD02BCBAF5676AA3A8 /* Pods-SelfSizingCollectionViewCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfSizingCollectionViewCell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelfSizingCollectionViewCell/Pods-SelfSizingCollectionViewCell.debug.xcconfig"; sourceTree = "<group>"; };
+		43D006CBFECA8693DFA1C3B2 /* Pods_SelfSizingCollectionViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfSizingCollectionViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DEFCD518D035B896A6B6B6D /* Pods-SelfSizingCollectionViewCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfSizingCollectionViewCell.release.xcconfig"; path = "Pods/Target Support Files/Pods-SelfSizingCollectionViewCell/Pods-SelfSizingCollectionViewCell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCD01F2F41FDB58C401E60C /* Pods_SelfSizingCollectionViewCell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		189F620FDF9BAA5A51C3E0F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				417A04CD02BCBAF5676AA3A8 /* Pods-SelfSizingCollectionViewCell.debug.xcconfig */,
+				4DEFCD518D035B896A6B6B6D /* Pods-SelfSizingCollectionViewCell.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		205F52A51B33E160007699AA = {
 			isa = PBXGroup;
 			children = (
 				205F52B01B33E160007699AA /* SelfSizingCollectionViewCell */,
 				205F52C61B33E161007699AA /* SelfSizingCollectionViewCellTests */,
 				205F52AF1B33E160007699AA /* Products */,
+				189F620FDF9BAA5A51C3E0F7 /* Pods */,
+				C900052EC9260F7FDF3C7C2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				205F52B31B33E160007699AA /* AppDelegate.swift */,
-				205F52B51B33E160007699AA /* ViewController.swift */,
 				205F52B71B33E161007699AA /* Main.storyboard */,
+				20DA7BB51B33E78000EF82E9 /* Controller */,
+				205F52D91B33E3D3007699AA /* View */,
+				205F52DA1B33E3D9007699AA /* Model */,
 				205F52BA1B33E161007699AA /* Images.xcassets */,
 				205F52BC1B33E161007699AA /* LaunchScreen.xib */,
 				205F52B11B33E160007699AA /* Supporting Files */,
@@ -91,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				205F52B21B33E160007699AA /* Info.plist */,
+				20DA7BB41B33E73B00EF82E9 /* SelfSizing-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -112,6 +144,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		205F52D91B33E3D3007699AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20DA7BB61B33E9F700EF82E9 /* ViewExtension.swift */,
+				205F52DD1B33E558007699AA /* CHTCollectionViewWaterfallLayout.swift */,
+				205F52D51B33E38A007699AA /* SelfSizingCollectionViewCell.xib */,
+				205F52D71B33E3C0007699AA /* SelfSizingCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		205F52DA1B33E3D9007699AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20DA7BB81B33EA0200EF82E9 /* ModelExtension.swift */,
+				205F52DB1B33E3F9007699AA /* Item.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		20DA7BB51B33E78000EF82E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				205F52D31B33E2EC007699AA /* CollectionViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C900052EC9260F7FDF3C7C2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43D006CBFECA8693DFA1C3B2 /* Pods_SelfSizingCollectionViewCell.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 205F52CD1B33E161007699AA /* Build configuration list for PBXNativeTarget "SelfSizingCollectionViewCell" */;
 			buildPhases = (
+				61626F084AC1F49CC5649790 /* Check Pods Manifest.lock */,
 				205F52AA1B33E160007699AA /* Sources */,
 				205F52AB1B33E160007699AA /* Frameworks */,
 				205F52AC1B33E160007699AA /* Resources */,
+				DCF0B2B680BF14E47DA7E1C0 /* Embed Pods Frameworks */,
+				1B8EB41387DBF566EC0F17E5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				205F52D61B33E38A007699AA /* SelfSizingCollectionViewCell.xib in Resources */,
 				205F52B91B33E161007699AA /* Main.storyboard in Resources */,
 				205F52BE1B33E161007699AA /* LaunchScreen.xib in Resources */,
 				205F52BB1B33E161007699AA /* Images.xcassets in Resources */,
@@ -207,12 +279,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B8EB41387DBF566EC0F17E5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SelfSizingCollectionViewCell/Pods-SelfSizingCollectionViewCell-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61626F084AC1F49CC5649790 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF0B2B680BF14E47DA7E1C0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SelfSizingCollectionViewCell/Pods-SelfSizingCollectionViewCell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		205F52AA1B33E160007699AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205F52B61B33E160007699AA /* ViewController.swift in Sources */,
+				20DA7BB71B33E9F700EF82E9 /* ViewExtension.swift in Sources */,
+				205F52DC1B33E3F9007699AA /* Item.swift in Sources */,
+				205F52DE1B33E558007699AA /* CHTCollectionViewWaterfallLayout.swift in Sources */,
+				205F52D41B33E2EC007699AA /* CollectionViewController.swift in Sources */,
+				205F52D81B33E3C0007699AA /* SelfSizingCollectionViewCell.swift in Sources */,
+				20DA7BB91B33EA0200EF82E9 /* ModelExtension.swift in Sources */,
 				205F52B41B33E160007699AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,21 +463,25 @@
 		};
 		205F52CE1B33E161007699AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417A04CD02BCBAF5676AA3A8 /* Pods-SelfSizingCollectionViewCell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SelfSizingCollectionViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SelfSizingCollectionViewCell/SelfSizing-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		205F52CF1B33E161007699AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DEFCD518D035B896A6B6B6D /* Pods-SelfSizingCollectionViewCell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SelfSizingCollectionViewCell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SelfSizingCollectionViewCell/SelfSizing-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +538,7 @@
 				205F52CF1B33E161007699AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		205F52D01B33E161007699AA /* Build configuration list for PBXNativeTarget "SelfSizingCollectionViewCellTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +547,7 @@
 				205F52D21B33E161007699AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,15 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-        </view>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelfSizingCell" id="5ZE-lh-peO" customClass="SelfSizingCollectionViewCell" customModule="SelfSizingCollectionViewCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dyk-Jd-3ew">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="211"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQ5-sS-cUZ">
+                        <rect key="frame" x="10" y="232" width="140" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvh-fJ-QaK">
+                        <rect key="frame" x="10" y="211" width="140" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Dyk-Jd-3ew" firstAttribute="centerX" secondItem="Jvh-fJ-QaK" secondAttribute="centerX" constant="-0.5" id="3Oe-Is-8Rw"/>
+                <constraint firstItem="Dyk-Jd-3ew" firstAttribute="top" secondItem="5ZE-lh-peO" secondAttribute="top" id="5H4-3B-85L"/>
+                <constraint firstAttribute="trailing" secondItem="Jvh-fJ-QaK" secondAttribute="trailing" constant="10" id="JbW-az-1Rr"/>
+                <constraint firstItem="Dyk-Jd-3ew" firstAttribute="leading" secondItem="5ZE-lh-peO" secondAttribute="leading" id="LYf-sU-HyM"/>
+                <constraint firstItem="JQ5-sS-cUZ" firstAttribute="leading" secondItem="5ZE-lh-peO" secondAttribute="leading" constant="10" id="T3M-dt-mXa"/>
+                <constraint firstItem="JQ5-sS-cUZ" firstAttribute="top" secondItem="Jvh-fJ-QaK" secondAttribute="bottom" id="UF4-Zf-SVd"/>
+                <constraint firstItem="Jvh-fJ-QaK" firstAttribute="centerX" secondItem="JQ5-sS-cUZ" secondAttribute="centerX" id="UTI-q1-6hD"/>
+                <constraint firstAttribute="bottom" secondItem="JQ5-sS-cUZ" secondAttribute="bottom" id="Ydh-Ds-W4D"/>
+                <constraint firstItem="Jvh-fJ-QaK" firstAttribute="leading" secondItem="5ZE-lh-peO" secondAttribute="leading" constant="10" id="f5a-Qt-OVR"/>
+                <constraint firstAttribute="trailing" secondItem="Dyk-Jd-3ew" secondAttribute="trailing" id="gWg-Dg-c6U"/>
+                <constraint firstItem="Jvh-fJ-QaK" firstAttribute="top" secondItem="Dyk-Jd-3ew" secondAttribute="bottom" id="htA-1f-F8c"/>
+                <constraint firstAttribute="trailing" secondItem="JQ5-sS-cUZ" secondAttribute="trailing" constant="10" id="o7u-7g-cvQ"/>
+                <constraint firstItem="JQ5-sS-cUZ" firstAttribute="top" secondItem="Jvh-fJ-QaK" secondAttribute="bottom" id="sq5-b2-Lz0"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3Oe-Is-8Rw"/>
+                    <exclude reference="UTI-q1-6hD"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="Dyk-Jd-3ew" id="8gf-5d-P2n"/>
+                <outlet property="subtitleLabel" destination="JQ5-sS-cUZ" id="cbY-85-siJ"/>
+                <outlet property="titleLabel" destination="Jvh-fJ-QaK" id="VKU-kk-623"/>
+            </connections>
+            <point key="canvasLocation" x="235" y="243"/>
+        </collectionViewCell>
     </objects>
 </document>
