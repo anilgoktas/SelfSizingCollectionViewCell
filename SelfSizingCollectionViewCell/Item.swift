@@ -32,7 +32,7 @@ class Item: NSObject {
     
     // MARK: - Test
     
-    class func random(#count: Int) -> [Item] {
+    class func random(count count: Int) -> [Item] {
         var items = [Item]()
         for _ in 0..<count {
             items.append(Item())

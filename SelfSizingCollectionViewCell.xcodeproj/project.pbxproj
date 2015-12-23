@@ -19,7 +19,7 @@
 		205F52DE1B33E558007699AA /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205F52DD1B33E558007699AA /* CHTCollectionViewWaterfallLayout.swift */; };
 		20DA7BB71B33E9F700EF82E9 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA7BB61B33E9F700EF82E9 /* ViewExtension.swift */; };
 		20DA7BB91B33EA0200EF82E9 /* ModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA7BB81B33EA0200EF82E9 /* ModelExtension.swift */; };
-		CFCD01F2F41FDB58C401E60C /* Pods_SelfSizingCollectionViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D006CBFECA8693DFA1C3B2 /* Pods_SelfSizingCollectionViewCell.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CFCD01F2F41FDB58C401E60C /* Pods_SelfSizingCollectionViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D006CBFECA8693DFA1C3B2 /* Pods_SelfSizingCollectionViewCell.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +227,8 @@
 		205F52A61B33E160007699AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Anıl Göktaş";
 				TargetAttributes = {

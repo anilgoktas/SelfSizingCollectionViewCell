@@ -109,7 +109,7 @@ class CHTCollectionViewWaterfallLayout : UICollectionViewLayout {
         super.init()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -250,16 +250,16 @@ class CHTCollectionViewWaterfallLayout : UICollectionViewLayout {
         idx = 0;
         let itemCounts = self.allItemAttributes.count
         while(idx < itemCounts){
-            var rect1 = self.allItemAttributes.objectAtIndex(idx).frame as CGRect
+            let rect1 = self.allItemAttributes.objectAtIndex(idx).frame as CGRect
             idx = min(idx + unionSize, itemCounts) - 1
-            var rect2 = self.allItemAttributes.objectAtIndex(idx).frame as CGRect
+            let rect2 = self.allItemAttributes.objectAtIndex(idx).frame as CGRect
             self.unionRects.addObject(NSValue(CGRect:CGRectUnion(rect1,rect2)))
             idx++
         }
     }
     
     override func collectionViewContentSize() -> CGSize{
-        var numberOfSections = self.collectionView!.numberOfSections()
+        let numberOfSections = self.collectionView!.numberOfSections()
         if numberOfSections == 0{
             return CGSizeZero
         }
@@ -277,7 +277,7 @@ class CHTCollectionViewWaterfallLayout : UICollectionViewLayout {
         if indexPath.item >= self.sectionItemAttributes.objectAtIndex(indexPath.section).count{
             return nil;
         }
-        var list = self.sectionItemAttributes.objectAtIndex(indexPath.section) as! NSArray
+        let list = self.sectionItemAttributes.objectAtIndex(indexPath.section) as! NSArray
         return list.objectAtIndex(indexPath.item) as! UICollectionViewLayoutAttributes
     }
     
@@ -291,19 +291,19 @@ class CHTCollectionViewWaterfallLayout : UICollectionViewLayout {
         return attribute
     }
     
-    override func layoutAttributesForElementsInRect (rect : CGRect) -> [AnyObject] {
+    override func layoutAttributesForElementsInRect (rect : CGRect) -> [UICollectionViewLayoutAttributes] {
         var i = 0
         var begin = 0, end = self.unionRects.count
         var attrs = NSMutableArray()
         
         for var i = 0; i < end; i++ {
-            if CGRectIntersectsRect(rect, self.unionRects.objectAtIndex(i).CGRectValue()){
+            if CGRectIntersectsRect(rect, self.unionRects.objectAtIndex(i).CGRectValue){
                 begin = i * unionSize;
                 break
             }
         }
         for var i = self.unionRects.count - 1; i>=0; i-- {
-            if CGRectIntersectsRect(rect, self.unionRects.objectAtIndex(i).CGRectValue()){
+            if CGRectIntersectsRect(rect, self.unionRects.objectAtIndex(i).CGRectValue){
                 end = min((i+1)*unionSize,self.allItemAttributes.count)
                 break
             }
@@ -315,11 +315,11 @@ class CHTCollectionViewWaterfallLayout : UICollectionViewLayout {
             }
         }
             
-        return NSArray(array: attrs) as [AnyObject]
+        return NSArray(array: attrs) as [AnyObject] as [AnyObject]
     }
     
     override func shouldInvalidateLayoutForBoundsChange (newBounds : CGRect) -> Bool {
-        var oldBounds = self.collectionView!.bounds
+        let oldBounds = self.collectionView!.bounds
         if CGRectGetWidth(newBounds) != CGRectGetWidth(oldBounds){
             return true
         }
@@ -336,7 +336,7 @@ class CHTCollectionViewWaterfallLayout : UICollectionViewLayout {
         var index = 0
         var shorestHeight = MAXFLOAT
 
-        self.columnHeights.enumerateObjectsUsingBlock({(object : AnyObject!, idx : NSInteger,pointer :UnsafeMutablePointer<ObjCBool>) in
+        self.columnHeights.enumerateObjectsUsingBlock({(object : AnyObject, idx : NSInteger,pointer :UnsafeMutablePointer<ObjCBool>) in
             let height = object.floatValue
             if (height<shorestHeight){
                 shorestHeight = height
@@ -356,7 +356,7 @@ class CHTCollectionViewWaterfallLayout : UICollectionViewLayout {
         var index = 0
         var longestHeight:CGFloat = 0.0
         
-        self.columnHeights.enumerateObjectsUsingBlock({(object : AnyObject!, idx : NSInteger,pointer :UnsafeMutablePointer<ObjCBool>) in
+        self.columnHeights.enumerateObjectsUsingBlock({(object : AnyObject, idx : NSInteger,pointer :UnsafeMutablePointer<ObjCBool>) in
             let height = CGFloat(object.floatValue)
             if (height > longestHeight){
                 longestHeight = height

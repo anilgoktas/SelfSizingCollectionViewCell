@@ -67,8 +67,8 @@ extension CollectionViewController: UICollectionViewDataSource {
         
         if let
         imageURLString = item.imageURLString,
-        rangeOfURLString = imageURLString.rangeOfString("//", options: .allZeros, range: nil, locale: nil),
-        imageURL = NSURL(string: filterURLString+imageURLString.substringFromIndex(advance(rangeOfURLString.startIndex,2)))
+        rangeOfURLString = imageURLString.rangeOfString("//", options: [], range: nil, locale: nil),
+        imageURL = NSURL(string: filterURLString+imageURLString.substringFromIndex(rangeOfURLString.startIndex.advancedBy(2)))
         {
             // Getting images via Alamofire
             

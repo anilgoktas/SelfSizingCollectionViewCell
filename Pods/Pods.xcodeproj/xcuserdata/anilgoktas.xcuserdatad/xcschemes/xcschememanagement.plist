@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-SelfSizingCollectionViewCell-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SelfSizingCollectionViewCell-Alamofire.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>05377D0967EB64339A7A27A4</key>
+		<key>265AD71FE3DCFCE85B82FCA721DCE799</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>39D6F4E416ED21C568505294</key>
+		<key>3FEBA513FC14DCAC74BDFA7481A7287E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE19163279A672D3DE236A68</key>
+		<key>4878C70B21CA37D7CB8A476BF986741B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
